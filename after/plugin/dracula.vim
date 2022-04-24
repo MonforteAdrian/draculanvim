@@ -188,5 +188,33 @@ if exists('g:loaded_cmp')
   hi! link CmpItemMenu Comment
 endif
 " }}}
+" nvim-tree: {{{
+  hi! link NvimTreeNormal DraculaFg
+  hi! link NvimTreeRootFolder DraculaOrangeBold
+  hi! link NvimTreeGitDirty DraculaYellow
+  hi! link NvimTreeGitNew DraculaGreen
+  hi! link NvimTreeImageFile DraculaPink
+  hi! link NvimTreeFolderIcon DraculaPurple
+  hi! link NvimTreeIndentMarker DraculaPurple
+  hi! link NvimTreeEmptyFolderName DraculaComment
+  hi! link NvimTreeFolderName DraculaFg
+  hi! link NvimTreeSpecialFile DraculaPink
+  hi! link NvimTreeOpenedFolderName DraculaFg
+  hi! link NvimTreeCursorLine DraculaSelection
+  hi! link NvimTreeIn DraculaSelection
+" }}}
+" VimWiki: {{{
+if exists('g:loaded_vimwiki')
+  hi! link VimwikiHeader1 DraculaOrange
+  hi! link VimwikiHeader2 DraculaGreen
+  hi! link VimwikiHeader3 DraculaPurple
+  hi! link VimwikiHeader4 DraculaCyan
+  hi! link VimwikiHeader5 DraculaPink
+  hi! link VimwikiHeader6 DraculaYellow
+
+  hi! link VimwikiLink DraculaCyanUnderline
+  hi! link VimwikiList DraculaPurple
+endif
+" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:

@@ -146,6 +146,7 @@ endfunction
 "}}}2
 " Dracula Highlight Groups: {{{2
 
+call s:h('DraculaBg', s:none, s:bg)
 call s:h('DraculaBgLight', s:none, s:bglight)
 call s:h('DraculaBgLighter', s:none, s:bglighter)
 call s:h('DraculaBgDark', s:none, s:bgdark)
@@ -163,11 +164,15 @@ call s:h('DraculaSelection', s:none, s:selection)
 call s:h('DraculaSubtle', s:subtle)
 
 call s:h('DraculaCyan', s:cyan)
+call s:h('DraculaCyanBold', s:cyan, s:none, [s:attrs.bold])
 call s:h('DraculaCyanItalic', s:cyan, s:none, [s:attrs.italic])
+call s:h('DraculaCyanBoldItalic', s:cyan, s:none, [s:attrs.bold, s:attrs.italic])
+call s:h('DraculaCyanUnderline', s:cyan, s:none, [s:attrs.underline])
 
 call s:h('DraculaGreen', s:green)
 call s:h('DraculaGreenBold', s:green, s:none, [s:attrs.bold])
 call s:h('DraculaGreenItalic', s:green, s:none, [s:attrs.italic])
+call s:h('DraculaGreenBoldItalic', s:green, s:none, [s:attrs.bold, s:attrs.italic])
 call s:h('DraculaGreenItalicUnderline', s:green, s:none, [s:attrs.italic, s:attrs.underline])
 
 call s:h('DraculaOrange', s:orange)
@@ -177,17 +182,25 @@ call s:h('DraculaOrangeBoldItalic', s:orange, s:none, [s:attrs.bold, s:attrs.ita
 call s:h('DraculaOrangeInverse', s:bg, s:orange)
 
 call s:h('DraculaPink', s:pink)
+call s:h('DraculaPinkBold', s:pink, s:none, [s:attrs.bold])
 call s:h('DraculaPinkItalic', s:pink, s:none, [s:attrs.italic])
+call s:h('DraculaPinkBoldItalic', s:pink, s:none, [s:attrs.bold, s:attrs.italic])
 
 call s:h('DraculaPurple', s:purple)
 call s:h('DraculaPurpleBold', s:purple, s:none, [s:attrs.bold])
 call s:h('DraculaPurpleItalic', s:purple, s:none, [s:attrs.italic])
+call s:h('DraculaPurpleBoldItalic', s:purple, s:none, [s:attrs.bold, s:attrs.italic])
 
 call s:h('DraculaRed', s:red)
+call s:h('DraculaRedBold', s:red, s:none, [s:attrs.bold])
+call s:h('DraculaRedItalic', s:red, s:none, [s:attrs.italic])
+call s:h('DraculaRedBoldItalic', s:red, s:none, [s:attrs.bold, s:attrs.italic])
 call s:h('DraculaRedInverse', s:fg, s:red)
 
 call s:h('DraculaYellow', s:yellow)
+call s:h('DraculaYellowBold', s:yellow, s:none, [s:attrs.bold])
 call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
+call s:h('DraculaYellowBoldItalic', s:yellow, s:none, [s:attrs.bold, s:attrs.italic])
 
 call s:h('DraculaError', s:red, s:none, [], s:red)
 
