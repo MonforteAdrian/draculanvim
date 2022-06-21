@@ -47,7 +47,7 @@ if exists('g:loaded_gitgutter')
   hi! link GitGutterChange DiffChange
   hi! link GitGutterDelete DiffDelete
 endif
-if has('nvim-0.5') && luaeval("pcall(require, 'gitsigns')")
+if luaeval("pcall(require, 'gitsigns')")
   " https://github.com/lewis6991/gitsigns.nvim requires nvim > 0.5
   " has('nvim-0.5') checks >= 0.5, so this should be future-proof.
   hi! link GitSignsAdd      DiffAdd
@@ -189,6 +189,7 @@ if exists('g:loaded_cmp')
 endif
 " }}}
 " nvim-tree: {{{
+if luaeval("pcall(require, 'nvim-tree')")
   hi! link NvimTreeNormal DraculaFg
   hi! link NvimTreeRootFolder DraculaOrangeBold
   hi! link NvimTreeGitDirty DraculaYellow
@@ -202,9 +203,10 @@ endif
   hi! link NvimTreeOpenedFolderName DraculaFg
   hi! link NvimTreeCursorLine DraculaSelection
   hi! link NvimTreeIn DraculaSelection
+endif
 " }}}
 " VimWiki: {{{
-if exists('g:loaded_vimwiki')
+if luaeval("pcall(require, 'vimwiki')")
   hi! link VimwikiHeader1 DraculaOrange
   hi! link VimwikiHeader2 DraculaGreen
   hi! link VimwikiHeader3 DraculaPurple
@@ -216,5 +218,13 @@ if exists('g:loaded_vimwiki')
   hi! link VimwikiList DraculaPurple
 endif
 " }}}
-
+" Dashboard: {{{
+if luaeval("pcall(require, 'dashboard')")
+  hi! link DashboardHeader DraculaPurple
+  hi! link DashboardCenterIcon DraculaYellow
+  hi! link DashboardCenter DraculaOrange
+  hi! link DashboardShortCut DraculaPink
+  hi! link DashboardFooter DraculaCyan
+endif
+" }}}
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
