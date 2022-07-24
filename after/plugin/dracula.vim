@@ -206,7 +206,6 @@ if luaeval("pcall(require, 'nvim-tree')")
 endif
 " }}}
 " VimWiki: {{{
-if luaeval("pcall(require, 'vimwiki')")
   hi! link VimwikiHeader1 DraculaOrange
   hi! link VimwikiHeader2 DraculaGreen
   hi! link VimwikiHeader3 DraculaPurple
@@ -216,7 +215,6 @@ if luaeval("pcall(require, 'vimwiki')")
 
   hi! link VimwikiLink DraculaCyanUnderline
   hi! link VimwikiList DraculaPurple
-endif
 " }}}
 " Dashboard: {{{
 if luaeval("pcall(require, 'dashboard')")
