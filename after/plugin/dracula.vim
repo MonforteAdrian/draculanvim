@@ -196,13 +196,18 @@ if luaeval("pcall(require, 'nvim-tree')")
   hi! link NvimTreeGitNew DraculaGreen
   hi! link NvimTreeImageFile DraculaPink
   hi! link NvimTreeFolderIcon DraculaPurple
-  hi! link NvimTreeIndentMarker DraculaPurple
+  hi! link NvimTreeIndentMarker DraculaPink
   hi! link NvimTreeEmptyFolderName DraculaComment
   hi! link NvimTreeFolderName DraculaFg
   hi! link NvimTreeSpecialFile DraculaPink
   hi! link NvimTreeOpenedFolderName DraculaFg
   hi! link NvimTreeCursorLine DraculaSelection
   hi! link NvimTreeIn DraculaSelection
+endif
+" }}}
+" Neorg: {{{
+if luaeval("pcall(require, 'neorg')")
+  hi! link NeorgHeading1Title DraculaOrange
 endif
 " }}}
 " VimWiki: {{{
