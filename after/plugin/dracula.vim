@@ -212,6 +212,7 @@ if luaeval("pcall(require, 'neorg')")
   hi! link NeorgDocumentMetaTitle DraculaCyanBold
   hi! link NeorgDocumentMetaDescription DraculaGreen
   hi! link NeorgDocumentMetaAuthor DraculaGreen
+  hi! link NeorgDocumentMetaAuthors DraculaGreen
   hi! link NeorgDocumentMetaCategories DraculaGreen
   hi! link NeorgDocumentMetaCreated DraculaGreen
   hi! link NeorgDocumentMetaVersion DraculaGreen
