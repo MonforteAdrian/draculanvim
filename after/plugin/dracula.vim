@@ -207,7 +207,61 @@ endif
 " }}}
 " Neorg: {{{
 if luaeval("pcall(require, 'neorg')")
+  hi! link NeorgDocumentMetaKey DraculaYellow
+  hi! link NeorgDocumentMetaValue DraculaGreen
+  hi! link NeorgDocumentMetaTitle DraculaCyanBold
+  hi! link NeorgDocumentMetaDescription DraculaGreen
+  hi! link NeorgDocumentMetaAuthor DraculaGreen
+  hi! link NeorgDocumentMetaCategories DraculaGreen
+  hi! link NeorgDocumentMetaCreated DraculaGreen
+  hi! link NeorgDocumentMetaVersion DraculaGreen
+  hi! link NeorgTagNameWord DraculaPurple
+  hi! link NeorgTagBegin DraculaPurple
+  hi! link NeorgTagEnd DraculaPurple
+  hi! link NeorgInsertionItem DraculaOrangeBold
+  hi! link NeorgLinkText DraculaCyanUnderline
+  hi! link NeorgLinkLocationURL DraculaCyanUnderline
+  hi! link NeorgMarkupSpoiler DraculaOrange
+  hi! link NeorgMarkupSuperscript DraculaPink
+  hi! link NeorgMarkupMath DraculaCyan
+  hi! link NeorgMarkupMathDelimiter DraculaCyanBold
+  hi! link NeorgMarkupVariable DraculaGreen
+  hi! link NeorgUnorderedList1 DraculaCyan
+  hi! link NeorgUnorderedList2 DraculaCyan
+  hi! link NeorgUnorderedList3 DraculaCyan
+  hi! link NeorgUnorderedList4 DraculaCyan
+  hi! link NeorgUnorderedList5 DraculaCyan
+  hi! link NeorgUnorderedList6 DraculaCyan
+  hi! link NeorgOrderedList1 DraculaPurple
+  hi! link NeorgOrderedList2 DraculaPurple
+  hi! link NeorgOrderedList3 DraculaPurple
+  hi! link NeorgOrderedList4 DraculaPurple
+  hi! link NeorgOrderedList5 DraculaPurple
+  hi! link NeorgOrderedList6 DraculaPurple
+  hi! link NeorgTodoItem1Done DraculaGreen
+  hi! link NeorgTodoItem2Done DraculaGreen
+  hi! link NeorgTodoItem3Done DraculaGreen
+  hi! link NeorgTodoItem4Done DraculaGreen
+  hi! link NeorgTodoItem5Done DraculaGreen
+  hi! link NeorgTodoItem6Done DraculaGreen
+  hi! link NeorgTodoItem1Urgent DraculaRed
+  hi! link NeorgTodoItem2Urgent DraculaRed
+  hi! link NeorgTodoItem3Urgent DraculaRed
+  hi! link NeorgTodoItem4Urgent DraculaRed
+  hi! link NeorgTodoItem5Urgent DraculaRed
+  hi! link NeorgTodoItem6Urgent DraculaRed
+  hi! link NeorgHeading1Prefix DraculaOrange
   hi! link NeorgHeading1Title DraculaOrange
+  hi! link NeorgHeading2Prefix DraculaPink
+  hi! link NeorgHeading2Title DraculaPink
+  hi! link NeorgHeading3Prefix DraculaPurple
+  hi! link NeorgHeading3Title DraculaPurple
+  hi! link NeorgHeading4Prefix DraculaCyan
+  hi! link NeorgHeading4Title DraculaCyan
+  hi! link NeorgHeading5Prefix DraculaGreen
+  hi! link NeorgHeading5Title DraculaGreen
+  hi! link NeorgHeading6Prefix DraculaYellow
+  hi! link NeorgHeading6Title DraculaYellow
 endif
 " }}}
 " VimWiki: {{{
