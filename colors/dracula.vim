@@ -271,7 +271,7 @@ hi! link Title        DraculaGreenBold
 hi! link VertSplit    DraculaWinSeparator
 hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
-hi! link WarningMsg   DraculaOrangeInverse
+hi! link WarningMsg   DraculaOrange
 
 " }}}
 " Syntax: {{{

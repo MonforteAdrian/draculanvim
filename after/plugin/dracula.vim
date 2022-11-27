@@ -206,7 +206,6 @@ if luaeval("pcall(require, 'nvim-tree')")
 endif
 " }}}
 " Neorg: {{{
-if luaeval("pcall(require, 'neorg')")
   hi! link NeorgDocumentMetaKey DraculaYellow
   hi! link NeorgDocumentMetaValue DraculaGreen
   hi! link NeorgDocumentMetaTitle DraculaCyanBold
@@ -263,7 +262,6 @@ if luaeval("pcall(require, 'neorg')")
   hi! link NeorgHeading5Title DraculaGreen
   hi! link NeorgHeading6Prefix DraculaYellow
   hi! link NeorgHeading6Title DraculaYellow
-endif
 " }}}
 " VimWiki: {{{
   hi! link VimwikiHeader1 DraculaOrange
